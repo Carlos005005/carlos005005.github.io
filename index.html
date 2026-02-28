@@ -1,1 +1,214 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bema dev</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/js/all.min.js"></script>
+    <style>
+        body {background-color: #0f172a;}
+    .glow{text-shadow: 0 0 8px #22c55e;}
+    </style>
+</head>
+<body class="text-green-400 font-mono">
 
+    <!--Navbar-->
+    <nav class="fixed w-full bg-black bg-opacity-80 backdrop-blur border-b border-green-500">
+            <h1 class="text-xl glow">Carlos_CL</h1>
+            <div class="hidden md:flex space-x-6 text-sm" id="nav-links">
+                <a href="#home" class="hover:text-white">Accueil</a>
+                <a href="#about" class="hover:text-white">About</a>
+                <a href="#projects" class="hover:text-white">Projets</a>
+                <a href="#competences" class="hover:text-white">Compétences</a>
+                <a href="#contact" class="hover:text-white">Contact</a>
+            </div>
+
+<!-- Hamburger button -->
+<div class="md:hidden flex items-center">
+  <button aria-label="btn" id="menu-btn" class="focus:outline-none text-2xltransition-transform duration-300">
+  <i id="menu-icon" class="fas fa-bars text-green-400"></i>
+</button>
+</div>
+<div id="mobile-menu" class="hidden flex-col bg-black bg-opacity-90 
+w-full mt-2 text-center space-y-4 py-4 md:hidden">
+  <a href="#home" class="block hover:text-white">Accueil</a>
+  <a href="#about" class="block hover:text-white">About</a>
+  <a href="#projects" class="block hover:text-white">Projets</a>
+  <a href="#competences" class="block hover:text-white">Compétences</a>
+  <a href="#contact" class="block hover:text-white">Contact</a>
+</div>
+        </div>
+    </nav>
+
+    <!--Home-->
+    <section id="home" class="h-screen flex items-center justify-center">
+        <div>
+            <h2 class="text-2xl md:text-6xl font-bold glow mb-6">Cybersecurity Enthusiast_</h2>
+            <p class="text-green-300 mb-6">Sécuriser le web. Construire le futur</p>
+            <a href="#projects" class="border border-green-500 px-6 py-3 hover:bg-green-500
+            hover:text-black transition">Voir mes Projets</a>
+        </div>
+    </section>
+
+    <!-- About -->
+<section id="about" class="py-20 bg-black">
+  <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center gap-10">
+    
+    <!-- Texte -->
+    <div class="md:w-1/2 text-center md:text-left">
+      <h2 class="text-3xl glow mb-6">[ About Me ]</h2>
+      <p class="text-green-300 leading-relaxed">
+        Développeur web freelance passionné par la cybersécurité.
+        Je conçois des applications modernes, performantes et sécurisées.
+        Stack principale : HTML, Tailwind CSS, PHP.
+      </p>
+    </div>
+  </div>
+</section>
+
+    <!--Projets-->
+    <section id="projects" class="py-20 bg-black">
+        <div class="max-w-6px mx-auto px-6">
+            <h2 class="text-3xl text-center glow mb-12">[Projets]</h2>
+            <div class="grid md:grid-cols-3">
+                <div class="border border-green-500 p-6 
+                hover:bg-green-500 hover:text-black transition">
+                    <h3 class="text-xl font-bold">Pentest Lab</h3>
+                    <p>Mini laboratoire de test d'intrusion local.</p>
+                </div>
+                <div class="border border-green-500 p-6
+                 hover:bg-green-500 hover:text-black transition">
+                   <h3 class="text-xl font-bold">Secure Login</h3> 
+                    <p>Authentification sécurisée avec hash + validation.</p>
+                </div>
+                <div class="border border-green-500 p-6
+                 hover:bg-green-500 hover:text-black transition">
+                    <h3 class="text-xl font-bold">Portfolio</h3>
+                    <p>Site personnel responsive moderne.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Compétances-->
+    <section id="competences" class="pt-32 pb-20">
+  <div class="max-w-5xl mx-auto px-6">
+    <h2 class="text-4xl text-center glow mb-12">[ Compétences ]</h2>
+
+    <div class="grid md:grid-cols-2 gap-10">
+
+      <div class="border border-green-500 p-6">
+        <h3 class="text-xl mb-4">Développement Web</h3>
+        <ul class="space-y-2 text-green-300">
+          <li>✔ HTML5</li>
+          <li>✔ Tailwind CSS</li>
+          <li>✔ PHP</li>
+          <li>✔ Responsive Design</li>
+        </ul>
+      </div>
+
+      <div class="border border-green-500 p-6">
+        <h3 class="text-xl mb-4">Cybersécurité</h3>
+        <ul class="space-y-2 text-green-300">
+          <li>✔ OWASP Basics</li>
+          <li>✔ Hash & Password Security</li>
+          <li>✔ SQL Injection Prevention</li>
+          <li>✔ Pentesting débutant</li>
+        </ul>
+      </div>
+
+      <div class="border border-green-500 p-6">
+        <h3 class="text-xl mb-4">Outils</h3>
+        <ul class="space-y-2 text-green-300">
+          <li>✔ Git & GitHub</li>
+          <li>✔ Linux</li>
+          <li>✔ VS Code</li>
+        </ul>
+      </div>
+
+      <div class="border border-green-500 p-6">
+        <h3 class="text-xl mb-4">Soft Skills</h3>
+        <ul class="space-y-2 text-green-300">
+          <li>✔ Autonomie</li>
+          <li>✔ Résolution de problèmes</li>
+          <li>✔ Travail en équipe</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+    <!--Contact-->
+    <section id="contact" class="py-20 bg-black">
+        <div class="max-w-4px mx-auto px-6 text-center">
+            <h2 class="text-3xl glow mb-6">[Contact]</h2>
+        </div>
+    </section>
+    <div class="mt-10 flex flex-wrap justify-center gap-4">
+
+  <!-- Facebook -->
+  <a href="https://facebook.com/carlos.cl.909232" target="_blank" rel="noopener"
+    class="border border-green-500 px-5 py-3 hover:bg-green-500 hover:text-black 
+    transition flex items-center gap-2">
+    <i class="fab fa-facebook"></i> Facebook
+  </a>
+
+  <!-- WhatsApp -->
+  <a href="https://web.whatsapp.com/261385169377" target="_blank" rel="noopener"
+    class="border border-green-500 px-5 py-3 hover:bg-green-500 hover:text-black 
+    transition flex items-center gap-2">
+    <i class="fab fa-whatsapp"></i> WhatsApp
+  </a>
+
+  <!-- Email -->
+  <a href="mailto:clc40509@email.com"
+    class="border border-green-500 px-5 py-3 hover:bg-green-500 hover:text-black
+     transition flex items-center gap-2">
+    <i class="fas fa-envelope"></i> Email
+  </a>
+
+  <!-- GitHub -->
+  <a href="https://github.com/carlos005005" target="_blank" rel="noopener"
+    class="border border-green-500 px-5 py-3 hover:bg-green-500 hover:text-black 
+    transition flex items-center gap-2">
+    <i class="fab fa-github"></i> GitHub
+  </a>
+
+  <!-- Appel -->
+  <a href="tel:+261328399865"
+    class="border border-green-500 px-5 py-3 hover:bg-green-500 hover:text-black 
+    transition flex items-center gap-2">
+    <i class="fas fa-phone"></i> Appeler maintenant
+  </a>
+
+</div>
+<script>
+  const btn = document.getElementById('menu-btn');
+  const menu = document.getElementById('mobile-menu');
+  const icon = document.getElementById('menu-icon');
+
+  btn.classList.toggle('rotate-90');
+  btn.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
+
+    // Changer icône
+    if (menu.classList.contains('hidden')) {
+      icon.classList.remove('fa-xmark');
+      icon.classList.add('fa-bars');
+    } else {
+      icon.classList.remove('fa-bars');
+      icon.classList.add('fa-xmark');
+    }
+  });
+
+  // Fermer menu quand on clique sur un lien
+  document.querySelectorAll('#mobile-menu a').forEach(link => {
+    link.addEventListener('click', () => {
+      menu.classList.add('hidden');
+      icon.classList.remove('fa-xmark');
+      icon.classList.add('fa-bars');
+    });
+  });
+</script>
+</body>
+</html>
